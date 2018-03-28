@@ -2,6 +2,7 @@ package test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import lecture13.CreditCardUtils;
@@ -21,4 +22,13 @@ class CreditCardUtilsTest {
 		String expected = "XXXXXXXXXXXX7788";
 		assertEquals(expected, result);
 	}
+	
+//	@Test()
+//	void test_nulls() throws Exception {
+//		
+//		// setup
+//		String ccNumber = null;
+//		
+//		
+//	}
 }
