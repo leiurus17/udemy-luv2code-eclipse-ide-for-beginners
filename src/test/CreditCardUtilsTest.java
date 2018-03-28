@@ -28,7 +28,7 @@ class CreditCardUtilsTest {
 		// setup
 		String ccNumber = null;
 		
-		Throwable exception = assertThrows(IllegalArgumentException.class,
+		assertThrows(IllegalArgumentException.class,
 	            ()->{CreditCardUtils.mask(ccNumber);} );
 		
 	}
