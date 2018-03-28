@@ -22,12 +22,14 @@ class CreditCardUtilsTest {
 		assertEquals(expected, result);
 	}
 	
-//	@Test()
-//	void test_nulls() throws Exception {
-//		
-//		// setup
-//		String ccNumber = null;
-//		
-//		
-//	}
+	@Test()
+	void test_nulls() throws Exception {
+		
+		// setup
+		String ccNumber = null;
+		
+		Throwable exception = assertThrows(IllegalArgumentException.class,
+	            ()->{CreditCardUtils.mask(ccNumber);} );
+		
+	}
 }
